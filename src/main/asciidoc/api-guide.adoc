@@ -1,0 +1,29 @@
+ifndef::snippets[]
+:snippets: ../../../target/generated-snippets
+endif::[]
+
+= API document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+
+== 사용자 API
+
+=== 사용자 전체 조회
+==== curl 호출예시
+include::{snippets}/user-controller-test/get-list/curl-request.adoc[]
+==== 응답명세
+include::{snippets}/user-controller-test/get-list/response-fields.adoc[]
+
+
+=== 특정 사용자 조회
+==== curl 호출예시
+include::{snippets}/user-controller-test/get-user/curl-request.adoc[]
+==== Path 인자
+include::{snippets}/user-controller-test/get-user/path-parameters.adoc[]
+==== 응답명세
+include::{snippets}/user-controller-test/get-user/response-fields.adoc[]
